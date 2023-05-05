@@ -1,4 +1,4 @@
-package fr.avainfo.fistwebsite;
+package fr.avainfo.fistwebsite.mvc;
 
 public class User {
 

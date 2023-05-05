@@ -4,6 +4,14 @@
     <title>Title</title>
 </head>
 <body>
-<h1 th:text="${session.t}">06/03/2023 - 11:36</h1>
+<h1 th:text="${session.time}">06/03/2023 - 11:36</h1>
+<form th:action="@{/index}" th:object="${user}" method="post">
+    <input th:field="*{firstName}" value="test">
+    <input th:field="*{lastName}" value="test">
+    <input th:field="*{username}" value="test">
+    <input th:field="*{email}" value="test">
+    <input th:field="*{password}" value="test">
+    <button type="submit">test</button>
+</form>
 </body>
 </html>

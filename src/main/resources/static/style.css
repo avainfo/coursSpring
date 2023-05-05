@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #03001C;
+}
+
+.center {
+    position: absolute;
+    left: 40vw;
+}
+
+table {
+    width: 20vw;
+    font-family: sans-serif;
+    border-bottom: 2px solid #005000;
+}
+
+table th,
+table td {
+    padding: 0.25em 0.5em;
+    text-align: left;
+    border-bottom: 2px solid #005000;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    text-align: right;
+}
+
+table td {
+    background-color: #08042d;
+    color: white;
+}
+
+table th {
+    background-color: #301E67;
+    color: #fff;
+}
+
+.zigzag {
+    border-collapse: separate;
+    border-spacing: 0.25em 1em;
+}
+
+.zigzag tbody tr:nth-child(odd) {
+    transform: rotate(2deg);
+}
+
+.zigzag thead tr,
+.zigzag tbody tr:nth-child(even) {
+    transform: rotate(-2deg);
+}

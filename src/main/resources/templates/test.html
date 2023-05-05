@@ -2,8 +2,24 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Getting Started: Serving Web Content</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<p th:text="'The value is : ' + ${session.time} + '!'"></p>
+<div class="center">
+    <table class="zigzag">
+        <thead>
+        <tr>
+            <th colspan="6">Users</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="users : ${userF}">
+            <div th:each="field : ${users}">
+                <td th:text="${field}"></td>
+            </div>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>

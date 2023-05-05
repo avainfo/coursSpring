@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1F1F1F;
+}
+
+.center {
+    position: absolute;
+    left: 30vw;
+}
+
+table {
+    width: 40vw;
+    font-family: sans-serif;
+}
+
+th {
+    font-size: 5vw;
+}
+
+table th,
+table td {
+    text-align: center;
+    padding-top: 3vh;
+    border-bottom: 2px solid #323232;
+}
+
+
+table td {
+/*  background-color: #08042d;*/
+    color: white;
+}
+
+table th {
+    /*background-color: #301E67;*/
+    color: #fff;
+}
